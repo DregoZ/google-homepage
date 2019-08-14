@@ -3,34 +3,62 @@
 <body>
 
     <style>
-        #main-div {}
+
+        #navbar {
+            vertical-align: middle;
+
+        }
 
         #navbar ul {
             list-style-type: none;
             margin: 0;
-            padding: 0;
-            overflow: hidden;
+            padding: 20px;
             background-color: white;
-
+            text-align: end;
+            
         }
 
 
         #navbar li {
             float: right;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        #navbar a {
+        #navbar li img {
+            width: 20px;
+            height: auto;
+            margin: auto;
+            
+
+        }
+
+        #navbar li a {
             display: block;
             text-align: center;
-            padding: 14px 20px;
+            padding: 14px 10px;
             text-decoration: none;
             font-family: sans-serif;
             font-size: 12px;
             color: black;
         }
 
-        #navbar a:hover {
+        #navbar li a:hover {
             text-decoration: underline;
+        }
+
+        #navbar li button {
+            margin-left: 80px;
+            background-color: rgb(92, 149, 255);
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold; 
+            font-size: 12px;
+            border-radius: 5px;
         }
 
         #footbar ul {
@@ -77,10 +105,9 @@
         }
 
         #inner-div {
-
             margin: 0;
             position: absolute;
-            top: 33%;
+            top: 40%;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -88,7 +115,7 @@
 
 
         #logo img {
-            max-width: 30%;
+            max-width: 250px;
             height: auto;
             display: block;
             margin-left: auto;
@@ -101,12 +128,14 @@
         }
 
         .search-box {
-            border-radius: 18px;
-            width: 60%;
+            border-radius: 25px;
+            border: 1px solid lightgrey;
+            width: 550px;
             height: 3em;
             display: block;
             margin-left: auto;
             margin-right: auto;
+            box-shadow: 1px 1px 1px lightgrey;
         }
 
         #search-box input:focus {
@@ -115,11 +144,12 @@
         }
 
         #search-box input {
-            padding: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
         }
 
         .search-box:hover {
-            box-shadow: 1px 1px 2px lightgrey;
+            box-shadow: 1px 1px 3px lightgrey;
         }
 
         #search-buttons {
@@ -182,19 +212,22 @@
     <div id="main-div">
         <div id="navbar">
             <ul>
-                <li><a href="#"><img src="#"></img>></a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Imaxes</a></li>
+                <li><a href="#"><button>Iniciar sesión</button></a></li>
+                <li><a href="#"><img src="images/ham-menu-google.png"></img></a></li>
+                <li>
+                    <a href="#">Imaxes</a>
+                </li>
                 <li><a href="#">Gmail</a></li>
             </ul>
         </div>
         <div id="inner-div">
             <div id="logo">
-                <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png"></img>
+                <a href="http://www.google.es"><img
+                        src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png"></a>
             </div>
 
             <div id="search-tools">
-                <form>
+                
                     <div id="search-box">
                         <input class="search-box" type="text">
                     </div>
@@ -208,7 +241,7 @@
 
                     </div>
 
-                </form>
+                
             </div>
         </div>
         <div>
