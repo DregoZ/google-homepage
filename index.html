@@ -1,0 +1,244 @@
+<html>
+
+<body>
+
+    <style>
+        #main-div {}
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+
+        #navbar li {
+            float: right;
+        }
+
+        #navbar a {
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: black;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline;
+        }
+
+        #footbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(240, 240, 240);
+
+        }
+
+        #footbar li.left {
+            float: left;
+        }
+
+        #footbar li.right {
+            float: right;
+        }
+
+        #footbar a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: black;
+        }
+
+        #footbar a:hover {
+            text-decoration: underline;
+        }
+
+        #pais {
+            margin: 0;
+            padding: 0px 20px;
+            overflow: hidden;
+            background-color: rgb(240, 240, 240);
+            font-family: sans-serif;
+            font-size: 14px;
+            text-align: left;
+            border-bottom: 1px solid lightgrey;
+
+        }
+
+        #inner-div {
+
+            margin: 0;
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+
+        #logo img {
+            max-width: 30%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        #search-tools {
+            margin: 15px;
+        }
+
+        .search-box {
+            border-radius: 18px;
+            width: 60%;
+            height: 3em;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #search-box input:focus {
+            outline-width: 0;
+
+        }
+
+        #search-box input {
+            padding: 10px;
+        }
+
+        .search-box:hover {
+            box-shadow: 1px 1px 2px lightgrey;
+        }
+
+        #search-buttons {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        #search-buttons button {
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(240, 240, 240);
+            color: black;
+            padding: 10px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px;
+
+
+        }
+
+        #search-buttons button:hover {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            margin: 9px;
+        }
+
+        #info {
+            padding: 15px 0px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        #info a {
+            text-decoration: none;
+            padding: 0 10px;
+
+        }
+
+        #info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+
+
+    <div id="main-div">
+        <div id="navbar">
+            <ul>
+                <li><a href="#"><img src="#"></img>></a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Imaxes</a></li>
+                <li><a href="#">Gmail</a></li>
+            </ul>
+        </div>
+        <div id="inner-div">
+            <div id="logo">
+                <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png"></img>
+            </div>
+
+            <div id="search-tools">
+                <form>
+                    <div id="search-box">
+                        <input class="search-box" type="text">
+                    </div>
+                    <div id="search-buttons">
+                        <button class="search-buttons" type="button">Busca con google</button>
+                        <button class="search-buttons" type="button">Vou ter sorte</button>
+
+                    </div>
+                    <div id="info">
+                        <p>Ofrecido por Google en: <a href=#>español</a> <a href=#>catalán</a> <a href=#>euskera</a></p>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div>
+            <footer>
+                <div id="pais">
+                    <p>España</p>
+                </div>
+                <div id="footbar">
+                    <ul>
+                        <li class="left"><a href="#">Publicidade</a></li>
+                        <li class="left"><a href="#">Empresa</a></li>
+                        <li class="left"><a href="#">Acerca de</a></li>
+                        <li class="left"><a href="#">Como funciona a Busca</a></li>
+
+                        <li class="right"><a href="#">Configuración</a></li>
+                        <li class="right"><a href="#">Condicións</a></li>
+                        <li class="right"><a href="#">Privacidade</a></li>
+
+
+
+                    </ul>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
